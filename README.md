@@ -19,3 +19,4 @@ git push origin master
 now on github app.py file update
 
 now do some changes on github and you want to update on ec2 server 
+git pull origin master
