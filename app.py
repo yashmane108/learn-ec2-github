@@ -9,7 +9,7 @@ def home():
 
 @app.route('/deploy')
 def deploy():
-    os.system("bash ~/deploy.sh")
+    os.system("bash /home/ec2-user/cicd/deploy.sh")
     return "Deployment Triggered"
 
 if __name__ == "__main__":
