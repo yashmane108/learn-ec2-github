@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "App Running 🚀 test1"
+    return "App Running 🚀 test1 test2"
 
 @app.route('/deploy')
 def deploy():
