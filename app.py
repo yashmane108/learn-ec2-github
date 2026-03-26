@@ -1,10 +1,16 @@
 from flask import Flask
+import os
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "CI/CD Project Running Successfully 🚀 update version. time 21:09 failid. time 21:20"
+    return "App Running 🚀"
+
+@app.route('/deploy')
+def deploy():
+    os.system("bash ~/deploy.sh")
+    return "Deployment Triggered"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
