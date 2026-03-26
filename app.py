@@ -10,7 +10,7 @@ def home():
 @app.route('/deploy')
 def deploy():
     os.system("bash /home/ec2-user/cicd/deploy.sh")
-    return "Deployment Triggered"
+    return "Deployment Triggered changes in github"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
